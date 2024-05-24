@@ -332,7 +332,7 @@
     }
     .profile-dropdown-icon {
         position: relative;
-        background-image: url("/images/icons/dropdown.svg");
+        background-image: url("../images/icons/dropdown.svg");
         background-repeat: no-repeat;
         background-position: center;
         width: 5px;
