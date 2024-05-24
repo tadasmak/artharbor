@@ -20,6 +20,8 @@
     "@vitejs/plugin-vue": "^4.4.0",
     "gh-pages": "^6.1.1",
     "sass": "^1.71.1",
-    "vite": "^4.4.11"
+    "vite": "^4.4.11",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   }
 }

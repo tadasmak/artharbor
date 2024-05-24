@@ -10,7 +10,7 @@
       <h2 class="section-title">Explore art themes</h2>
       <h5 class="section-subtitle">Delve into the world of creativity and expression as you explore our diverse collection of art themes. From the tranquility of nature photography to the classic art, discover the stories, emotions, and inspirations behind each unique theme brought to life by talented artists.</h5>
       <div class="image-slider row" id="image_slider">
-        <div v-for="theme in themes" :key="theme.id" class="themes-section-image-container slider-element column" :style="{backgroundImage: `url(../src/assets/images/home/${theme.imageUrl})`}" draggable="false">
+        <div v-for="theme in themes" :key="theme.id" class="themes-section-image-container slider-element column" :style="{backgroundImage: `url(${getImgUrl(theme.imageUrl)})`}" draggable="false">
           <div class="themes-section-darken-overlay"></div>
           <div class="themes-section-text-container">
             <div class="themes-section-title">{{ theme.title }}</div>
@@ -43,9 +43,9 @@
     data() {
       return {
         themes: [
-          {id: 1, title: "Nature", description: "Embrace the beauty of the natural world through captivating landscapes, wildlife, and botanical wonders.", imageUrl: "nature.jpg"},
-          {id: 2, title: "Evenings", description: "Witness the world transformed as the sun sets and paints the sky with hues of twilight.", imageUrl: "evenings.jpg"},
-          {id: 3, title: "Architecture", description: "Experience the allure of architectural wonders. Delve into a captivating collection that highlights the delicate balance between human creativity and the serene beauty of nature.", imageUrl: "architecture.jpg"},
+          {id: 1, title: "Nature", description: "Embrace the beauty of the natural world through captivating landscapes, wildlife, and botanical wonders.", imageUrl: "/images/home/nature.jpg"},
+          {id: 2, title: "Evenings", description: "Witness the world transformed as the sun sets and paints the sky with hues of twilight.", imageUrl: "/images/home/evenings.jpg"},
+          {id: 3, title: "Architecture", description: "Experience the allure of architectural wonders. Delve into a captivating collection that highlights the delicate balance between human creativity and the serene beauty of nature.", imageUrl: "/images/home/architecture.jpg"},
         ],
         arts: artData.slice(0, 7),
         parallaxOffset: 0
@@ -110,6 +110,9 @@
     methods: {
       parallaxEffect() {
         this.parallaxOffset = window.scrollY * 0.4;
+      },
+      getImgUrl(url) {
+        return require(`../assets/${url}`)
       }
     }
   }

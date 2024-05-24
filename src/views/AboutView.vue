@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="row image-row">
-                <div v-for="i in 5" class="image-placeholder" :style="{backgroundImage: `url(../src/assets/images/about-us/${i}.jpg)`}" :class="i == 1 ? 'active' : ''" @click="aboutUsImageSelection(i)"></div>
+                <div v-for="i in 5" class="image-placeholder" :style="{backgroundImage: 'url(' + `/src/assets/images/about-us/${i}.jpg` + ')'}" :class="i == 1 ? 'active' : ''" @click="aboutUsImageSelection(i)"></div>
             </div>
             <h2 class="about-us-title">Join Us on the Journey</h2>
             <p class="about-us-paragraph">Whether you're here to explore, share, or simply immerse yourself in the world of art, Mosaic Harbor invites you to join us on this exhilarating journey. Every click, every upload, and every connection made contributes to the vibrant mosaic we're creating together. Welcome to Mosaic Harbor, where your artistic odyssey begins and where every artist finds a home.</p>
