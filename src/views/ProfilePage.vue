@@ -3,11 +3,11 @@
         <div class="profile-content content-smaller">
             <div class="column center">
                 <div class="profile-container">
-                    <img class="profile-icon" src="../assets/images/icons/profile.svg">
+                    <img class="profile-icon" src="/images/icons/profile.svg">
                 </div>
                 <h1 class="profile-name-container">
                     <span id="profile_name_text">{{ userName || "Artist" }}</span>
-                    <img id="profile_name_edit_button" @click="toggleEditName()" src="../assets/images/icons/edit.svg">
+                    <img id="profile_name_edit_button" @click="toggleEditName()" src="/images/icons/edit.svg">
                     <div id="profile_name_edit" class="hidden">
                         <input id="profile_name_input" v-model="userName" @input="showSubmitNameButton()" placeholder="Enter name...">
                         <span id="profile_name_submit" class="hidden" @click="submitName()">✔</span>
@@ -332,7 +332,7 @@
     }
     .profile-dropdown-icon {
         position: relative;
-        background-image: url("../assets/images/icons/dropdown.svg");
+        background-image: url("/images/icons/dropdown.svg");
         background-repeat: no-repeat;
         background-position: center;
         width: 5px;

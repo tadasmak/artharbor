@@ -26,7 +26,7 @@
     @import '../assets/variables.scss';
     
     .front-header-content {
-        background-image: url("../assets/images/home/home.jpg");
+        background-image: url("/images/home/home.jpg");
         background-size: cover;
         background-position: center;
         height: min(100vh, 600px);

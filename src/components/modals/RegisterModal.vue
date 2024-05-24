@@ -3,7 +3,7 @@
         <div class="modal-content">
             <span class="modal-close" @click="close">&times;</span>
             <div class="row">
-                <img class="modal-content-left-section" src="/src/assets/images/random/register_modal_left_side.jpg">
+                <img class="modal-content-left-section" src="/images/random/register_modal_left_side.jpg">
                 <div class="modal-content-right-section">
                     <div class="right-section-content">
                         <h1 class="modal-title">Join ArtHarbor</h1>

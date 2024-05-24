@@ -12,7 +12,7 @@
             <span v-if="user">{{ user.username || "Profile" }}</span>
             <span v-else>Log in</span>
             <div class="profile-icon-container">
-                <img src="../assets/images/icons/nav_profile.svg">
+                <img src="/images/icons/nav_profile.svg">
             </div>
         </div>
     </div>

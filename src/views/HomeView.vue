@@ -10,7 +10,7 @@
       <h2 class="section-title">Explore art themes</h2>
       <h5 class="section-subtitle">Delve into the world of creativity and expression as you explore our diverse collection of art themes. From the tranquility of nature photography to the classic art, discover the stories, emotions, and inspirations behind each unique theme brought to life by talented artists.</h5>
       <div class="image-slider row" id="image_slider">
-        <div v-for="theme in themes" :key="theme.id" class="themes-section-image-container slider-element column" :style="{backgroundImage: `url(${getImgUrl(theme.imageUrl)})`}" draggable="false">
+        <div v-for="theme in themes" :key="theme.id" class="themes-section-image-container slider-element column" :style="{backgroundImage: `url(${theme.imageUrl})`}" draggable="false">
           <div class="themes-section-darken-overlay"></div>
           <div class="themes-section-text-container">
             <div class="themes-section-title">{{ theme.title }}</div>
@@ -26,7 +26,7 @@
       <h5 class="section-subtitle">Immerse yourself in our art exhibitions. From the vibrant strokes of color to the intricate details, experience the power of art to captivate, inspire, and transport you to new realms of imagination and emotion.</h5>
       <div class="artwork-grid">
         <div v-for="art in arts" :key="art.id">
-          <img :src="`../src/assets/images/art/${art.imageUrl}`" class="artwork-grid-image">
+          <img :src="`/images/art/${art.imageUrl}`" class="artwork-grid-image">
         </div>
       </div>
       <div class="artwork-explore-overlay">
@@ -110,9 +110,6 @@
     methods: {
       parallaxEffect() {
         this.parallaxOffset = window.scrollY * 0.4;
-      },
-      getImgUrl(url) {
-        return require(`../assets/${url}`)
       }
     }
   }
@@ -122,7 +119,7 @@
     @import '../assets/variables.scss';
 
   .home-content {
-    background-image: url("../assets/images/home/home.jpg");
+    background-image: url("/images/home/home.jpg");
     background-size: cover;
     background-position: center;
     height: min(80vh, 1200px);
@@ -199,7 +196,7 @@
     background-color: black;
   }
   .parallax-image {
-    background-image: url("../assets/images/home/parallax.jpg");
+    background-image: url("/images/home/parallax.jpg");
     background-size: 200% auto;
     background-position-x: center;
     height: 320px;

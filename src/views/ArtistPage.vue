@@ -3,7 +3,7 @@
         <div class="profile-content content-smaller">
             <div class="column center">
                 <div class="profile-container">
-                    <img class="profile-icon" src="../assets/images/icons/profile.svg">
+                    <img class="profile-icon" src="/images/icons/profile.svg">
                 </div>
                 <h1 class="profile-name-container">{{ user.name || user.username }}</h1>
                 <div class="profile-email">{{ user.email }}</div>
