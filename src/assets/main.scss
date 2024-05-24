@@ -1,0 +1,282 @@
+@import './base.scss';
+@import './variables.scss';
+@import "toastify-js/src/toastify.css";
+
+/* General styles */
+html {
+  scroll-behavior: smooth;
+}
+
+b {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+main {
+  padding-top: 72px;
+}
+
+body {
+  background-color: black;
+}
+
+#app {
+  margin: 0 auto;
+  color: white;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.content {
+  padding: 100px max(20px, calc((100vw - 1200px) / 2));
+}
+.content-smaller {
+  padding: 120px max(20px, calc((100vw - 1000px) / 2));
+}
+.content-smallest {
+  padding: 120px max(20px, calc((100vw - 800px) / 2));
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &.not-center {
+    justify-content: flex-start;
+  }
+  &.v-center {
+    align-items: center;
+  }
+}
+.column {
+  display: flex;
+  flex-direction: column;
+
+  &.center {
+    align-items: center;
+  }
+}
+
+.green-button {
+  background-color: #70A88F;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+.green-button:hover {
+  background-color: #3c926c;
+}
+
+@media (max-width: $responsive-breakpoint-medium) {
+  .content, .content-smaller {
+    padding: 40px 30px;
+  }
+}
+@media (max-width: $responsive-breakpoint-small) {
+  .content, .content-smaller {
+    padding: 40px 10px;
+  }
+}
+
+/* ----------------------------------- */
+/* Artwork grid styles */
+
+.artwork-grid {
+  column-count: 3;
+}
+.artwork-grid-image {
+  padding-bottom: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+.artwork-grid-item {
+  transition: 0.2s;
+  cursor: pointer;
+}
+.artwork-grid-item:hover {
+  filter: brightness(0.4);
+}
+
+@media (max-width: $responsive-breakpoint-medium) {
+  .artwork-grid {
+    column-count: 2;
+  }
+}
+
+/* ----------------------------------- */
+/* Filter section styles */
+
+/* TODO: Can separate into filter/sort css file */
+.filter-container {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.filter-section {
+  margin-right: auto;
+}
+.filter-selection {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 18px;
+  line-height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.sort-section span {
+  line-height: 40px;
+  margin-right: 4px;
+}
+.sort-option {
+  color: #cecece;
+  cursor: pointer;
+}
+.sort-option.active {
+  color: white;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+@media (max-width: $responsive-breakpoint-medium) {
+  .filter-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .filter-section {
+    padding: 5px 0;
+  }
+}
+
+/* ----------------------------------- */
+
+/* Modal commonized styles */
+
+.modal-view {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.modal-content {
+  background-color: #D9D9D9;
+  color: black;
+  position: absolute;
+  width: 60%;
+  max-width: 1200px;
+  top: 20%;
+}
+.modal-close {
+  position: absolute;
+  color: black;
+  right: 0;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.modal-content-left-section {
+  width: 50%;
+  object-fit: cover;
+}
+.modal-content-right-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-section-content {
+  width: 70%;
+  padding: 20px 10px;
+  margin: auto;
+}
+.modal-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+.modal-input-container {
+  margin: 10px 0;
+}
+.modal-input-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+}
+.modal-input {
+  width: 100%;
+  line-height: 22px;
+  padding: 2px 5px;
+}
+.modal-input-helper {
+  color: #757575;
+  font-size: 13px;
+}
+.modal-button {
+  width: 100%;
+  background-color: #70A88F;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 20px 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #559778;
+  }
+}
+.modal-already-member span {
+  color: #70A88F;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(44, 122, 86)
+  }
+}
+.modal-terms-text {
+  color: #757575;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 20px;
+
+  span {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $responsive-breakpoint-large) {
+  .modal-content-left-section {
+    width: 0;
+  }
+  .modal-content-right-section {
+    width: 100%;
+    padding: 50px 0;
+  }
+}
+@media (max-width: $responsive-breakpoint-small) {
+  .modal-content {
+    width: 90%;
+  }
+  .right-section-content {
+    width: 90%;
+  }
+}
+
+/* ----------------------------------- */

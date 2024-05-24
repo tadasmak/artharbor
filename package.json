@@ -1,0 +1,22 @@
+{
+  "name": "kursinis2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^10.8.1",
+    "git": "^0.1.5",
+    "toastify-js": "^1.12.0",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.0",
+    "sass": "^1.71.1",
+    "vite": "^4.4.11"
+  }
+}
