@@ -43,9 +43,9 @@
     data() {
       return {
         themes: [
-          {id: 1, title: "Nature", description: "Embrace the beauty of the natural world through captivating landscapes, wildlife, and botanical wonders.", imageUrl: "../images/home/nature.jpg"},
-          {id: 2, title: "Evenings", description: "Witness the world transformed as the sun sets and paints the sky with hues of twilight.", imageUrl: "../images/home/evenings.jpg"},
-          {id: 3, title: "Architecture", description: "Experience the allure of architectural wonders. Delve into a captivating collection that highlights the delicate balance between human creativity and the serene beauty of nature.", imageUrl: "../images/home/architecture.jpg"},
+          {id: 1, title: "Nature", description: "Embrace the beauty of the natural world through captivating landscapes, wildlife, and botanical wonders.", imageUrl: "/images/home/nature.jpg"},
+          {id: 2, title: "Evenings", description: "Witness the world transformed as the sun sets and paints the sky with hues of twilight.", imageUrl: "/images/home/evenings.jpg"},
+          {id: 3, title: "Architecture", description: "Experience the allure of architectural wonders. Delve into a captivating collection that highlights the delicate balance between human creativity and the serene beauty of nature.", imageUrl: "/images/home/architecture.jpg"},
         ],
         arts: artData.slice(0, 7),
         parallaxOffset: 0

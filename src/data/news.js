@@ -9,7 +9,7 @@ export const newsData = [
             {title: "Art as Advocacy", paragraph: "Long exposure photography, in this context, transcends its role as mere visual indulgence. It becomes a form of environmental advocacy, urging us to acknowledge the subtle nuances of our changing world. The artist, armed with a camera, becomes a messenger, inviting viewers to engage in a dialogue about the environment.\nIn this fusion of art and advocacy, the river stands not just as a subject but as a protagonist in an evolving narrative. Each frame invites introspection, challenging us to consider our impact on the natural world."},
             {title: "Conclusion: A Timeless Dialogue", paragraph: "In the silent conversation between the river and the lens, a timeless dialogue unfolds—one that speaks of both the enduring beauty of nature and the fragility of our ecosystems. Through the art of long exposure photography, we are reminded that, like the river, time flows inexorably forward. It is our responsibility to ensure that the narrative it weaves is one of harmony, not discord."}
         ],
-        imageUrl: "../images/news/1.jpg",
+        imageUrl: "/images/news/1.jpg",
         author: "tadasmak"
     },
     {
@@ -25,7 +25,7 @@ export const newsData = [
             {title: "Embracing Technology: Bridging Tradition and Innovation", paragraph: "Art studios are not resistant to change; instead, they embrace technological advancements. Integrating cutting-edge tools and digital resources into the artistic process, studios empower artists to explore new frontiers of expression. This synergy between tradition and innovation ensures that art remains a dynamic force in an ever-evolving world."},
             {title: "Conclusion: Sustaining the Soul of Art", paragraph: "In essence, art studios are the beating heart of the artistic world. They are spaces where creativity is not just encouraged but celebrated, and where the collective pulse of artists shapes the cultural narrative. As we celebrate the importance of art studios, we recognize their indispensable role in sustaining the soul of art and ensuring that the canvas of creativity continues to flourish."}
         ],
-        imageUrl: "../images/news/2.jpg",
+        imageUrl: "/images/news/2.jpg",
         author: "artificial_intelligence"
     },
     {
@@ -41,7 +41,7 @@ export const newsData = [
             {title: "Environmental Activism in Technicolor: Imagining Sustainable Futures", paragraph: "Futuristic art isn't just about fantastical realms; it's a powerful tool for envisioning and advocating for a sustainable future. Artists use their futuristic canvases to depict eco-conscious utopias, raising awareness about climate change and inspiring viewers to take action in the present for a more harmonious tomorrow."},
             {title: "Conclusion: A Quantum Canvas Unveiled", paragraph: "As we traverse the uncharted territories of the future, art becomes our guiding star. The fusion of sci-fi and artistic expression is a testament to human ingenuity, a beacon illuminating the vast possibilities that lie ahead. In this quantum age, artists don't just paint on canvases; they sculpt the very fabric of the future, creating a visual tapestry that transcends time and space."}
         ],
-        imageUrl: "../images/news/3.jpg",
+        imageUrl: "/images/news/3.jpg",
         author: "artificial_intelligence"
     }
 ]
