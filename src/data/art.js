@@ -59,7 +59,7 @@ export async function getOtherArtworkData(id, authorId) {
 export const artData = [
   {
     id: 1,
-    imageUrl: "../src/assets/images/art/1.jpg",
+    imageUrl: "1.jpg",
     created_date: "Nov 16, 2023",
     title: "Tower of Insolence",
     author: "tadasmak",
@@ -68,7 +68,7 @@ export const artData = [
   },
   {
     id: 2,
-    imageUrl: "../src/assets/images/art/2.jpg",
+    imageUrl: "2.jpg",
     created_date: "Nov 14, 2023",
     title: "River flows in you",
     author: "tadasmak",
@@ -77,7 +77,7 @@ export const artData = [
   },
   {
     id: 3,
-    imageUrl: "../src/assets/images/art/3.jpg",
+    imageUrl: "3.jpg",
     created_date: "Nov 01, 2023",
     title: "Purple skies evening",
     author: "tadasmak",
@@ -86,7 +86,7 @@ export const artData = [
   },
   {
     id: 4,
-    imageUrl: "../src/assets/images/art/4.jpg",
+    imageUrl: "4.jpg",
     created_date: "Dec 02, 2023",
     title: "Landscape to Vilnius",
     author: "tadasmak",
@@ -95,7 +95,7 @@ export const artData = [
   },
   {
     id: 5,
-    imageUrl: "../src/assets/images/art/5.jpg",
+    imageUrl: "5.jpg",
     created_date: "Oct 19, 2023",
     title: "Abandoned apocalypse",
     author: "artificial_intelligence",
@@ -104,7 +104,7 @@ export const artData = [
   },
   {
     id: 6,
-    imageUrl: "../src/assets/images/art/6.jpg",
+    imageUrl: "6.jpg",
     created_date: "Sep 26, 2023",
     title: "Light blue intelligence",
     author: "artificial_intelligence",
@@ -113,7 +113,7 @@ export const artData = [
   },
   {
     id: 7,
-    imageUrl: "../src/assets/images/art/7.jpg",
+    imageUrl: "7.jpg",
     created_date: "Sep 12, 2023",
     title: "Breath of a flower",
     author: "artificial_intelligence",
@@ -122,7 +122,7 @@ export const artData = [
   },
   {
     id: 8,
-    imageUrl: "../src/assets/images/art/8.jpg",
+    imageUrl: "8.jpg",
     created_date: "Nov 25, 2023",
     title: "Daisy forest",
     author: "artificial_intelligence",
@@ -131,7 +131,7 @@ export const artData = [
   },
   {
     id: 9,
-    imageUrl: "../src/assets/images/art/9.jpg",
+    imageUrl: "9.jpg",
     created_date: "Dec 06, 2023",
     title: "Neighbor's motorcycle",
     author: "tadasmak",
@@ -140,7 +140,7 @@ export const artData = [
   },
   {
     id: 10,
-    imageUrl: "../src/assets/images/art/10.jpg",
+    imageUrl: "10.jpg",
     created_date: "Oct 08, 2023",
     title: "A studio of masterwork",
     author: "artificial_intelligence",
@@ -149,7 +149,7 @@ export const artData = [
   },
   {
     id: 11,
-    imageUrl: "../src/assets/images/art/11.jpg",
+    imageUrl: "11.jpg",
     created_date: "Dec 09, 2023",
     title: "Glampse into the futuristic art",
     author: "artificial_intelligence",
@@ -158,7 +158,7 @@ export const artData = [
   },
   {
     id: 12,
-    imageUrl: "../src/assets/images/art/12.jpg",
+    imageUrl: "12.jpg",
     created_date: "Nov 02, 2023",
     title: "Forgotten Solitude",
     author: "artificial_intelligence",
@@ -167,7 +167,7 @@ export const artData = [
   },
   {
     id: 13,
-    imageUrl: "../src/assets/images/art/13.jpg",
+    imageUrl: "13.jpg",
     created_date: "Oct 20, 2023",
     title: "A battle between nations",
     author: "artificial_intelligence",
