@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import { getAuth } from "firebase/auth"
 
 import HomeView from '../views/HomeView.vue'
@@ -11,7 +11,7 @@ import ProfilePage from '../views/ProfilePage.vue'
 import ArtistPage from '../views/ArtistPage.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
